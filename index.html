@@ -584,9 +584,9 @@
             <div class="players-grid">
                 <div class="card player-card">
                     <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Player" class="player-img">
-                    <h3 class="player-name">James Rodriguez</h3>
-                    <p class="player-position">Forward</p>
-                    <div class="player-stats">
+                    <h3 class="player-name">Βύρωνας Σωτήριος Πετράκης</h3>
+                    <p class="player-position">Προέδρος</p>
+                    <!-- <div class="player-stats">
                         <div class="stat">
                             <div class="stat-value">15</div>
                             <div class="stat-label">Goals</div>
@@ -598,43 +598,43 @@
                         <div class="stat">
                             <div class="stat-value">24</div>
                             <div class="stat-label">Matches</div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="card player-card">
                     <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Player" class="player-img">
-                    <h3 class="player-name">Marcus Johnson</h3>
-                    <p class="player-position">Midfielder</p>
+                    <h3 class="player-name">Αντώνης Φραγκουλάκης</h3>
+                    <p class="player-position">Defender C</p>
                     <div class="player-stats">
                         <div class="stat">
-                            <div class="stat-value">5</div>
+                            <div class="stat-value">0</div>
                             <div class="stat-label">Goals</div>
                         </div>
                         <div class="stat">
-                            <div class="stat-value">12</div>
+                            <div class="stat-value">0</div>
                             <div class="stat-label">Assists</div>
                         </div>
                         <div class="stat">
-                            <div class="stat-value">26</div>
+                            <div class="stat-value">1</div>
                             <div class="stat-label">Matches</div>
                         </div>
                     </div>
                 </div>
                 <div class="card player-card">
                     <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Player" class="player-img">
-                    <h3 class="player-name">David Chen</h3>
-                    <p class="player-position">Defender</p>
+                    <h3 class="player-name">Δημήτρης Ξυπνητός</h3>
+                    <p class="player-position">Attacker VC</p>
                     <div class="player-stats">
                         <div class="stat">
-                            <div class="stat-value">2</div>
+                            <div class="stat-value">3</div>
                             <div class="stat-label">Goals</div>
                         </div>
                         <div class="stat">
-                            <div class="stat-value">4</div>
+                            <div class="stat-value">0</div>
                             <div class="stat-label">Assists</div>
                         </div>
                         <div class="stat">
-                            <div class="stat-value">28</div>
+                            <div class="stat-value">3</div>
                             <div class="stat-label">Matches</div>
                         </div>
                     </div>
@@ -719,7 +719,7 @@
         </div>
     </section>
 
-<script>
+<!-- <script>
 // Use the CSV export URL instead of HTML
 const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTYw1ATqmmYvRceHnvthg7DiJlxUGrSlXXiyNxGEsDph39UyWN8FnKuRE1sUvSDyw/pub?gid=1255943826&single=true&output=csv';
 
@@ -772,29 +772,67 @@ fetch(sheetUrl)
             <p><small>Debug: ${error.message}</small></p>
         `;
     });
-</script>
-
+</script> -->
+<section class="section" id="table">
+    <div class="container">
+        <h2 class="section-title">League Table</h2>
+        <div class="card">
+            <div style="overflow-x: auto;">
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr style="background-color: var(--secondary-color); color: white;">
+                            <th style="padding: 12px 15px; text-align: center; width: 40px;">#</th>
+                            <th style="padding: 12px 15px; text-align: left;">Team</th>
+                            <th style="padding: 12px 15px; text-align: center;">Played</th>
+                            <th style="padding: 12px 15px; text-align: center;">Won</th>
+                            <th style="padding: 12px 15px; text-align: center;">Drawn</th>
+                            <th style="padding: 12px 15px; text-align: center;">Lost</th>
+                            <th style="padding: 12px 15px; text-align: center;">GF</th>
+                            <th style="padding: 12px 15px; text-align: center;">GA</th>
+                            <th style="padding: 12px 15px; text-align: center;">GD</th>
+                            <th style="padding: 12px 15px; text-align: center; font-weight: 700;">Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background-color: #f9f9f9;">
+                            <td style="padding: 12px 15px; font-weight: 700; text-align: center;">5</td>
+                            <td style="padding: 12px 15px;">ΜΕΓΑΛΟ ΛEΙΒΑΔΙ</td>
+                            <td style="padding: 12px 15px; text-align: center;">3</td>
+                            <td style="padding: 12px 15px; text-align: center;">1</td>
+                            <td style="padding: 12px 15px; text-align: center;">0</td>
+                            <td style="padding: 12px 15px; text-align: center;">2</td>
+                            <td style="padding: 12px 15px; text-align: center;">5</td>
+                            <td style="padding: 12px 15px; text-align: center;">12</td>
+                            <td style="padding: 12px 15px; text-align: center;">-7</td>
+                            <td style="padding: 12px 15px; text-align: center; font-weight: 700;">3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
     <section class="section" id="news">
         <div class="container">
             <h2 class="section-title">Latest News</h2>
             <div class="news-grid">
                 <div class="card news-card">
                     <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="News" class="news-img">
-                    <div class="news-date">June 5, 2023</div>
-                    <h3 class="news-title">Mega Livadi FC Signs New Striker</h3>
-                    <p class="news-excerpt">The club has announced the signing of James Rodriguez from City Rovers for a record fee.</p>
+                    <div class="news-date">October 1, 2025</div>
+                    <h3 class="news-title">Mega Livadi FC Striker Scores Hat trick</h3>
+                    <p class="news-excerpt">The club is delighted by Dimitris Xypnitos performance vs Αστέρας Εξαρχείων scoring three goals including the winning one.</p>
                 </div>
                 <div class="card news-card">
                     <img src="https://images.unsplash.com/photo-1529900748604-07564a03e7a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="News" class="news-img">
-                    <div class="news-date">June 2, 2023</div>
-                    <h3 class="news-title">Team Prepares for Cup Final</h3>
-                    <p class="news-excerpt">The squad is in high spirits as they prepare for the upcoming cup final against rivals United FC.</p>
+                    <div class="news-date">September 24, 2025</div>
+                    <h3 class="news-title">Magoulas Scores First Goal</h3>
+                    <p class="news-excerpt">The squad is in high spirits as the first goal has been scored and the team stars rolling.</p>
                 </div>
                 <div class="card news-card">
                     <img src="https://images.unsplash.com/photo-1598880940086-4b2f1b77a1c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="News" class="news-img">
-                    <div class="news-date">May 28, 2023</div>
-                    <h3 class="news-title">Youth Academy Produces New Talent</h3>
-                    <p class="news-excerpt">Three players from the youth academy have been promoted to the first team for next season.</p>
+                    <div class="news-date">August, 2025</div>
+                    <h3 class="news-title">Team is Found</h3>
+                    <p class="news-excerpt">The team is found the club presents its full press release.</p>
                 </div>
             </div>
         </div>
