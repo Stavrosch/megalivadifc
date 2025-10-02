@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary-color: #e74c3c;
+            --primary-color: #be1b1e;
             --secondary-color: #000000;
             --light-color: #f5f5f5;
             --dark-color: #2c3e50;
@@ -294,9 +294,14 @@
             color: white;
         }
         
-        .status-completed {
+        .status-won {
             background-color: #27ae60;
             color: white;
+        }
+
+        .status-lost {
+        background-color: #be1b1e;
+        color: white;
         }
         
         /* Team History */
@@ -518,7 +523,7 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                     <img src="logo_mg.jpeg" alt="Mega Livadi FC Logo" style="height: 100px; width: 100px;">
+                     <img src="logo_mg-1.png" alt="Mega Livadi FC Logo" style="height: 120px; width: 120px;">
                     <h1>MEGA <span>LIVADI FC</span></h1>
                 </div>
                 <nav>
@@ -551,22 +556,22 @@
             <div class="stats-grid">
                 <div class="card stat-card">
                     <i class="fas fa-trophy"></i>
-                    <h3>15</h3>
+                    <h3>1</h3>
                     <p>Matches Won</p>
                 </div>
                 <div class="card stat-card">
                     <i class="fas fa-futbol"></i>
-                    <h3>42</h3>
+                    <h3>5</h3>
                     <p>Goals Scored</p>
                 </div>
                 <div class="card stat-card">
                     <i class="fas fa-shield-alt"></i>
-                    <h3>18</h3>
+                    <h3>0</h3>
                     <p>Clean Sheets</p>
                 </div>
                 <div class="card stat-card">
                     <i class="fas fa-chart-line"></i>
-                    <h3>2nd</h3>
+                    <h3>5th</h3>
                     <p>League Position</p>
                 </div>
             </div>
@@ -646,31 +651,31 @@
                     <div class="match-info">
                         <div class="match-date">May 15, 2023</div>
                         <div class="match-teams">
-                            <div class="match-result">3 - 1</div>
-                            <div>Mega Livadi FC vs. City Rovers</div>
+                            <div class="match-result">5- 0</div>
+                            <div>vs Mega Livadi FC </div>
                         </div>
                     </div>
-                    <div class="match-status status-completed">Completed</div>
+                    <div class="match-status status-lost">Lost</div>
                 </div>
                 <div class="card match-card">
                     <div class="match-info">
-                        <div class="match-date">May 22, 2023</div>
+                        <div class="match-date">September 24, 2025</div>
                         <div class="match-teams">
-                            <div class="match-result">2 - 2</div>
-                            <div>Mega Livadi FC vs. Athletic Club</div>
+                            <div class="match-result">4 - 1</div>
+                            <div> ΓΥΠΑΕΤΟΙ vs ΜΕΓΑΛΟ ΛEΙΒΑΔΙ FC</div>
                         </div>
                     </div>
-                    <div class="match-status status-completed">Completed</div>
+                    <div class="match-status status-lost">Lost</div>
                 </div>
                 <div class="card match-card">
                     <div class="match-info">
-                        <div class="match-date">June 1, 2023</div>
+                        <div class="match-date">October 1, 2025</div>
                         <div class="match-teams">
-                            <div class="match-result">1 - 0</div>
-                            <div>Mega Livadi FC vs. Victory FC</div>
+                            <div class="match-result">3 - 4</div>
+                            <div>Αστέρας Εξαρχείων vs ΜΕΓΑΛΟ ΛEΙΒΑΔΙ FC</div>
                         </div>
                     </div>
-                    <div class="match-status status-completed">Completed</div>
+                    <div class="match-status status-won">Win</div>
                 </div>
             </div>
         </div>
@@ -714,55 +719,60 @@
         </div>
     </section>
 
-    <section class="section" id="table">
-        <div class="container">
-            <h2 class="section-title">League Table</h2>
-            <div class="card">
-                <table style="width: 100%; border-collapse: collapse;">
-                    <thead>
-                        <tr style="background-color: var(--secondary-color); color: white;">
-                            <th style="padding: 12px 15px; text-align: left; width: 40px;">#</th>
-                            <th style="padding: 12px 15px; text-align: left;">Team</th>
-                            <th style="padding: 12px 15px; text-align: center;">Played</th>
-                            <th style="padding: 12px 15px; text-align: center;">Won</th>
-                            <th style="padding: 12px 15px; text-align: center;">Drawn</th>
-                            <th style="padding: 12px 15px; text-align: center;">Lost</th>
-                            <th style="padding: 12px 15px; text-align: center;">Points</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr style="background-color: #f9f9f9;">
-                            <td style="padding: 12px 15px; font-weight: 700; text-align: center;">1</td>
-                            <td style="padding: 12px 15px;">City Rovers</td>
-                            <td style="padding: 12px 15px; text-align: center;">30</td>
-                            <td style="padding: 12px 15px; text-align: center;">20</td>
-                            <td style="padding: 12px 15px; text-align: center;">6</td>
-                            <td style="padding: 12px 15px; text-align: center;">4</td>
-                            <td style="padding: 12px 15px; text-align: center; font-weight: 700;">66</td>
-                        </tr>
-                        <tr style="background-color: #fff;">
-                            <td style="padding: 12px 15px; font-weight: 700; text-align: center; color: var(--primary-color);">2</td>
-                            <td style="padding: 12px 15px; font-weight: 700;">Mega Livadi FC</td>
-                            <td style="padding: 12px 15px; text-align: center;">30</td>
-                            <td style="padding: 12px 15px; text-align: center;">18</td>
-                            <td style="padding: 12px 15px; text-align: center;">7</td>
-                            <td style="padding: 12px 15px; text-align: center;">5</td>
-                            <td style="padding: 12px 15px; text-align: center; font-weight: 700; color: var(--primary-color);">61</td>
-                        </tr>
-                        <tr style="background-color: #f9f9f9;">
-                            <td style="padding: 12px 15px; font-weight: 700; text-align: center;">3</td>
-                            <td style="padding: 12px 15px;">Athletic Club</td>
-                            <td style="padding: 12px 15px; text-align: center;">30</td>
-                            <td style="padding: 12px 15px; text-align: center;">16</td>
-                            <td style="padding: 12px 15px; text-align: center;">8</td>
-                            <td style="padding: 12px 15px; text-align: center;">6</td>
-                            <td style="padding: 12px 15px; text-align: center; font-weight: 700;">56</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
+<script>
+// Use the CSV export URL instead of HTML
+const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTYw1ATqmmYvRceHnvthg7DiJlxUGrSlXXiyNxGEsDph39UyWN8FnKuRE1sUvSDyw/pub?gid=1255943826&single=true&output=csv';
+
+fetch(sheetUrl)
+    .then(response => {
+        if (!response.ok) throw new Error('Network response was not ok');
+        return response.text();
+    })
+    .then(csvText => {
+        console.log('Raw CSV:', csvText); // Debug log
+        const rows = csvText.split('\n').filter(row => row.trim() !== '');
+        
+        if (rows.length === 0) {
+            document.getElementById('league-table').innerHTML = '<p>No data available</p>';
+            return;
+        }
+        
+        let html = '<table style="width: 100%; border-collapse: collapse; margin: 0;">';
+        html += '<thead><tr style="background-color: var(--secondary-color); color: white;">';
+        
+        // Create headers based on your image
+        const headers = ['Θ', 'ΟΜΑΔΑ', 'ΑΓ', 'Ν', 'Ι', 'Η', 'ΤΥ', 'ΤΚ', 'ΒΑΘ'];
+        headers.forEach(header => {
+            html += `<th style="padding: 12px 8px; text-align: center; border: 1px solid #ddd; font-size: 0.9rem;">${header}</th>`;
+        });
+        html += '</tr></thead><tbody>';
+        
+        // Create rows
+        for (let i = 1; i < rows.length; i++) {
+            const cells = rows[i].split(',');
+            const isOurTeam = cells[1] && cells[1].toLowerCase().includes('mega livadi');
+            
+            html += '<tr style="background-color: ' + (i % 2 === 0 ? '#f9f9f9' : '#fff') + ';">';
+            cells.forEach((cell, index) => {
+                let style = 'padding: 10px 8px; border: 1px solid #ddd; text-align: center; font-size: 0.9rem;';
+                if (index === 1) style += ' text-align: left;'; // Team name aligned left
+                if (isOurTeam) style += ' background-color: rgba(190, 27, 30, 0.1); font-weight: 700;';
+                html += `<td style="${style}">${cell.trim()}</td>`;
+            });
+            html += '</tr>';
+        }
+        
+        html += '</tbody></table>';
+        document.getElementById('league-table').innerHTML = html;
+    })
+    .catch(error => {
+        console.error('Error loading league table:', error);
+        document.getElementById('league-table').innerHTML = `
+            <p>Error loading league table. Please try again later.</p>
+            <p><small>Debug: ${error.message}</small></p>
+        `;
+    });
+</script>
 
     <section class="section" id="news">
         <div class="container">
