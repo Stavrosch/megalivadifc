@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - Μεγάλο Λειβάδι FC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #be1b1e;
+            --secondary-color: #000000;
+            --light-color: #f5f5f5;
+            --dark-color: #2c3e50;
+            --accent-color: #b42515;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--secondary-color), #1a1a1a);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+        }
+        
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        
+        .logo span {
+            color: var(--primary-color);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+        
+        nav ul li a:hover, nav ul li a.active {
+            background-color: var(--primary-color);
+        }
+        
+        /* Section Styles */
+        .section {
+            padding: 4rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--secondary-color);
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary-color);
+            margin: 10px auto;
+        }
+        
+        /* Card Styles */
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        /* Match Card Styles */
+        .match-card {
+            display: grid;
+            grid-template-columns: 100px 1fr 70px 1fr;
+            align-items: center;
+            padding: 15px;
+            width: 75%;
+            gap: 15px;
+        }
+
+        .match-date {
+            font-size: 0.8rem;
+            color: #777;
+            text-align: left;
+        }
+
+        .team {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .team:first-child {
+            justify-content: flex-start;
+        }
+
+        .team:last-child {
+            justify-content: flex-end;
+        }
+
+        .team-badge {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--light-color);
+            flex-shrink: 0;
+        }
+
+        .team-name {
+            font-weight: 600;
+            font-size: 0.9rem;
+            min-width: 0;
+            text-align: center;
+        }
+
+        .team-name:last-child {
+            font-weight: 700;
+        }
+
+        .vs-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .match-status {
+            font-size: 1.3rem;
+            text-align: center;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        .status-won {
+            background-color: #27ae60;
+            color: white;
+        }
+
+        .status-lost {
+            background-color: #be1b1e;
+            color: white;
+        }
+
+        .status-draw {
+            background-color: #f39c12;
+            color: white;
+        }
+
+        /* Accordion Header */
+        .accordion-header {
+            padding: 15px 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--light-color);
+            transition: all 0.3s;
+        }
+
+        .accordion-header i {
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+            margin-left: 10px;
+        }
+        .accordion.open .accordion-header i {
+            transform: rotate(90deg);
+        }
+
+        .accordion-content {
+            display: none;
+            padding: 20px;
+            background: #fff;
+        }
+
+        .accordion.open .accordion-content {
+            display: block;
+        }
+
+        .match-info {
+            margin-bottom: 10px;
+            font-style: italic;
+            color: #444;
+        }
+
+        .scorers {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .scorers li {
+            margin-bottom: 5px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-section ul li a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section ul li a:hover {
+            color: var(--primary-color);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+        /* Player Stats Table Styles */
+        .player-stats-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 0.85rem;
+        }
+
+        .player-stats-table th {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 8px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .player-stats-table td {
+            padding: 8px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .player-stats-table tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        .player-name {
+            text-align: left;
+            font-weight: 500;
+        }
+
+        .stats-header {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 1rem;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+        }
+
+        .starting-players, .substitute-players {
+            margin-bottom: 20px;
+        }
+
+        .player-role {
+            font-size: 0.75rem;
+            color: #777;
+            font-style: italic;
+        }
+
+        .goal-cell {
+            color: #27ae60;
+            font-weight: 600;
+        }
+
+        .assist-cell {
+            color: #3498db;
+            font-weight: 600;
+        }
+                
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 15px;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            
+            nav ul li {
+                margin: 5px;
+            }
+            
+            .team-badge {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .match-score {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .team-badge {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .match-score {
+                font-size: 1.3rem;
+            }
+            
+            .team-name {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="logo_mg-1.png" alt="Μεγάλο Λειβάδι FC Logo" style="height: 120px; width: 120px;">
+                    <h1>MEGA <span>LIVADI FC</span></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#players">Players</a></li>
+                        <li><a href="index.html#stats">Stats</a></li>
+                        <li><a href="results.html" class="active">Results</a></li>
+                        <li><a href="index.html#fixtures">Fixtures</a></li>
+                        <li><a href="index.html#table">Table</a></li>
+                        <li><a href="index.html#news">News</a></li>
+                        <li><a href="index.html#history">History</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Match Results</h2>
+
+            <div class="accordion">
+                <div class="accordion-header">
+                    <div class="match-card">
+                        <div class="match-date">October 1, 2025</div>
+                        <div class="team">
+                            <img src="club_placeholder.png" alt="Αστέρας Εξαρχείων" class="team-badge">
+                            <div class="team-name">Αστέρας Εξαρχείων</div>
+                        </div> 
+                        <div class="vs-container">
+                            <div class="match-status status-won">4 - 3</div>
+                        </div>
+                        <div class="team">
+                            <img src="logo_mg-1.png" alt="Μεγάλο Λειβάδι FC" class="team-badge">
+                            <div class="team-name">Μεγάλο Λειβάδι FC</div>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="accordion-content">
+                    <div class="stats-header">Player Statistics</div>
+                    <div class="starting-players">
+                        <table class="player-stats-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Position</th>
+                                    <th>Goal</th>
+                                    <th>Assist</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>0</td><td class="player-name">Δημητράκης <span class="player-role">(C)</span></td><td>Defender</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>1</td><td class="player-name">Mάο <span class="player-role">(Τ)</span></td><td>Goalkeeper</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>2</td><td class="player-name">Πριγκιπς</td><td>Defender</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>5</td><td class="player-name">Vaggolinho</td><td>Defender</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>8</td><td class="player-name">Faninho JR</td><td>Midfielder</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>9</td><td class="player-name">Dixyle</td><td>Striker</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>10</td><td class="player-name">Φράγκου Jr</td><td>Striker</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>11</td><td class="player-name">Magoulinho</td><td>Striker</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>19</td><td class="player-name">Τsak Van Dijk</td><td>Defender</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>22</td><td class="player-name">Χαιρέτας</td><td>Defender</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>-</td><td class="player-name">Βυρωνας <span class="player-role">(Π)</span></td><td>CEO</td><td class="goal-cell">-</td><td class="assist-cell">-</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-header">
+                    <div class="match-card">
+                        <div class="match-date">September 24, 2025</div>
+                        <div class="team">
+                            <img src="club_placeholder.png" alt="Γυπαετοί" class="team-badge">
+                            <div class="team-name">Γυπαετοί</div>
+                        </div> 
+                        <div class="vs-container">
+                            <div class="match-status status-lost">1 - 4</div>
+                        </div>
+                        <div class="team">
+                            <img src="logo_mg-1.png" alt="Μεγάλο Λειβάδι FC" class="team-badge">
+                            <div class="team-name">Μεγάλο Λειβάδι FC</div>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="accordion-content">
+                  <div class="stats-header">Player Statistics</div>
+                    <div class="starting-players">
+                        <table class="player-stats-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Played</th>
+                                    <th>Goal</th>
+                                    <th>Assist</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>0</td><td class="player-name">Δημητράκης <span class="player-role">(C)</span></td><td>Defender</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>1</td><td class="player-name">Mάο <span class="player-role">(Τ)</span></td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>2</td><td class="player-name">Πριγκιπς</td><td>Defender</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>5</td><td class="player-name">Vaggolinho</td><td>Defender</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>8</td><td class="player-name">Faninho JR</td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">1</td></tr>
+                                <tr><td>9</td><td class="player-name">Dixyle</td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>10</td><td class="player-name">Φράγκου Jr</td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">1</td></tr>
+                                <tr><td>11</td><td class="player-name">Magoulinho</td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>19</td><td class="player-name">Τsak Van Dijk</td><td>Defender</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>21</td><td class="player-name">Παλαιός</td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>22</td><td class="player-name">Χαιρέτας</td><td>Defender</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>23</td><td class="player-name">Μαγουλάς</td><td>1</td><td class="goal-cell">1</td><td class="assist-cell">0</td></tr>
+                                <tr><td>-</td><td class="player-name">Βυρωνας <span class="player-role">(Π)</span></td><td>1</td><td class="goal-cell">-</td><td class="assist-cell">-</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            <div class="accordion">
+                <div class="accordion-header">
+                    <div class="match-card">
+                        <div class="match-date">September 17, 2025</div>
+                        <div class="team">
+                            <img src="club_placeholder.png" alt="Unknown" class="team-badge">
+                            <div class="team-name">???</div>
+                        </div> 
+                        <div class="vs-container">
+                            <div class="match-status status-lost">0 - 5</div>
+                        </div>
+                        <div class="team">
+                            <img src="logo_mg-1.png" alt="Μεγάλο Λειβάδι FC" class="team-badge">
+                            <div class="team-name">Μεγάλο Λειβάδι FC</div>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="accordion-content">
+                    <div class="stats-header">Player Statistics</div>
+                    <div class="starting-players">
+                        <table class="player-stats-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Played</th>
+                                    <th>Goal</th>
+                                    <th>Assist</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>0</td><td class="player-name">Δημητράκης <span class="player-role">(C)</span></td><td>Defender</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>1</td><td class="player-name">Mάο <span class="player-role">(Τ)</span></td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>2</td><td class="player-name">Πριγκιπς</td><td>defender</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>3</td><td class="player-name">Φράγκου</td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>8</td><td class="player-name">Faninho JR</td><td>1</td><td class="goal-cell">1</td><td class="assist-cell">2</td></tr>
+                                <tr><td>9</td><td class="player-name">Dixyle</td><td>1</td><td class="goal-cell">3</td><td class="assist-cell">0</td></tr>
+                                <tr><td>10</td><td class="player-name">Φράγκου Jr</td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>13</td><td class="player-name">Κουζούπης</td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>19</td><td class="player-name">Τsak Van Dijk</td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>21</td><td class="player-name">Παλαιός</td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>22</td><td class="player-name">Χαιρέτας</td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">1</td></tr>
+                                <tr><td>23</td><td class="player-name">Μαγουλάς</td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
+                                <tr><td>-</td><td class="player-name">Βυρωνας <span class="player-role">(Π)</span></td><td>1</td><td class="goal-cell">-</td><td class="assist-cell">-</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Μεγάλο Λειβάδι FC</h3>
+                    <p>Official website of Mega Livadi Football Club. Follow our team, players, matches and news.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#players">Players</a></li>
+                        <li><a href="index.html#stats">Stats</a></li>
+                        <li><a href="results.html">Results</a></li>
+                        <li><a href="index.html#fixtures">Fixtures</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Livadi Arena, Mega Livadi</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@megalivadifc.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Μεγάλο Λειβάδι FC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Highlight active navigation link
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Accordion toggle
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const accordion = header.parentElement;
+                accordion.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+</html>
