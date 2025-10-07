@@ -1,0 +1,492 @@
+{
+  "metadata": {
+    "last_updated": "2025-10-07T17:27:20",
+    "total_matches": 3,
+    "source_file": "ΜΕΓΑ ΛΙΒΑΔΙ FC.xlsx",
+    "season": "2024-2025"
+  },
+  "summary": {
+    "played": 3,
+    "wins": 1,
+    "draws": 0,
+    "losses": 2,
+    "points": 3,
+    "goals_for": 5,
+    "goals_against": 12,
+    "goal_difference": -7,
+    "win_percentage": 33.3
+  },
+  "matches": [
+    {
+      "date": "2025-09-17",
+      "opponent": "Άπιαστοι",
+      "result": "0-5",
+      "outcome": "L",
+      "points": 0,
+      "player_of_match": "",
+      "players": [
+        {
+          "number": 0,
+          "name": "Δημητράκης",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 1,
+          "name": "Mάο",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 2,
+          "name": "Πριγκιπς",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 3,
+          "name": "Φράγκου",
+          "played": false,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 4,
+          "name": "Αλεξίου",
+          "played": false,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 5,
+          "name": "Vaggolinho",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 6,
+          "name": "El Professor",
+          "played": false,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 7,
+          "name": "Χ. Αλεξίου",
+          "played": false,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 8,
+          "name": "Faninho JR",
+          "played": true,
+          "goals": 0,
+          "assists": 2
+        },
+        {
+          "number": 9,
+          "name": "Dixyle",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 10,
+          "name": "Φράγκου Jr",
+          "played": true,
+          "goals": 0,
+          "assists": 1
+        },
+        {
+          "number": 11,
+          "name": "Magoulinho",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 13,
+          "name": "Κουζούπης",
+          "played": false,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 17,
+          "name": "Πάλης",
+          "played": false,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 19,
+          "name": "Τsak Van Dijk",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 21,
+          "name": "Παλαιός",
+          "played": false,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 22,
+          "name": "Χαιρέτας",
+          "played": false,
+          "goals": 0,
+          "assists": 1
+        },
+        {
+          "number": 23,
+          "name": "Μαγουλάς",
+          "played": false,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 24,
+          "name": "Νικολάου",
+          "played": false,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 55,
+          "name": "Kavvas",
+          "played": false,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 0,
+          "name": "Βυρωνας (Π)",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        }
+      ]
+    },
+    {
+      "date": "2025-09-24",
+      "opponent": "Γυπαετοί",
+      "result": "1-4",
+      "outcome": "L",
+      "points": 0,
+      "player_of_match": "",
+      "players": [
+        {
+          "number": 0,
+          "name": "Δημητράκης",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 1,
+          "name": "Mάο",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 2,
+          "name": "Πριγκιπς",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 3,
+          "name": "Φράγκου",
+          "played": false,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 4,
+          "name": "Αλεξίου",
+          "played": false,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 5,
+          "name": "Vaggolinho",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 6,
+          "name": "El Professor",
+          "played": false,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 7,
+          "name": "Χ. Αλεξίου",
+          "played": false,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 8,
+          "name": "Faninho JR",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 9,
+          "name": "Dixyle",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 10,
+          "name": "Φράγκου Jr",
+          "played": true,
+          "goals": 0,
+          "assists": 1
+        },
+        {
+          "number": 11,
+          "name": "Magoulinho",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 13,
+          "name": "Κουζούπης",
+          "played": false,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 17,
+          "name": "Πάλης",
+          "played": false,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 19,
+          "name": "Τsak Van Dijk",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 21,
+          "name": "Παλαιός",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 22,
+          "name": "Χαιρέτας",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 23,
+          "name": "Μαγουλάς",
+          "played": true,
+          "goals": 1,
+          "assists": 0
+        },
+        {
+          "number": 24,
+          "name": "Νικολάου",
+          "played": false,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 55,
+          "name": "Kavvas",
+          "played": false,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 0,
+          "name": "Βυρωνας (Π)",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        }
+      ]
+    },
+    {
+      "date": "2025-10-01",
+      "opponent": "Αστέρας Εξαρχείων",
+      "result": "4-3",
+      "outcome": "W",
+      "points": 3,
+      "player_of_match": "Δημήτρης Ξυπνητός",
+      "players": [
+        {
+          "number": 0,
+          "name": "Δημητράκης",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 1,
+          "name": "Mάο",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 2,
+          "name": "Πριγκιπς",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 3,
+          "name": "Φράγκου",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 4,
+          "name": "Αλεξίου",
+          "played": false,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 5,
+          "name": "Vaggolinho",
+          "played": false,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 6,
+          "name": "El Professor",
+          "played": false,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 7,
+          "name": "Χ. Αλεξίου",
+          "played": false,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 8,
+          "name": "Faninho JR",
+          "played": true,
+          "goals": 1,
+          "assists": 2
+        },
+        {
+          "number": 9,
+          "name": "Dixyle",
+          "played": true,
+          "goals": 3,
+          "assists": 0
+        },
+        {
+          "number": 10,
+          "name": "Φράγκου Jr",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 11,
+          "name": "Magoulinho",
+          "played": false,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 13,
+          "name": "Κουζούπης",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 17,
+          "name": "Πάλης",
+          "played": false,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 19,
+          "name": "Τsak Van Dijk",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 21,
+          "name": "Παλαιός",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 22,
+          "name": "Χαιρέτας",
+          "played": true,
+          "goals": 0,
+          "assists": 1
+        },
+        {
+          "number": 23,
+          "name": "Μαγουλάς",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 24,
+          "name": "Νικολάου",
+          "played": false,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 55,
+          "name": "Kavvas",
+          "played": false,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 0,
+          "name": "Βυρωνας (Π)",
+          "played": true,
+          "goals": 0,
+          "assists": 0
+        }
+      ]
+    }
+  ]
+}

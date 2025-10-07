@@ -381,6 +381,19 @@
             color: #3498db;
             font-weight: 600;
         }
+        
+        .pom-star {
+            color: gold;
+            margin-left: 5px;
+        }
+        
+        /* Loading indicator */
+        .loading {
+            text-align: center;
+            padding: 20px;
+            font-size: 1.2rem;
+            color: var(--primary-color);
+        }
                 
         /* Responsive Design */
         @media (max-width: 768px) {
@@ -451,154 +464,9 @@
     <section class="section">
         <div class="container">
             <h2 class="section-title">Match Results</h2>
-
-            <div class="accordion">
-                <div class="accordion-header">
-                    <div class="match-card">
-                        <div class="match-date">October 1, 2025</div>
-                        <div class="team">
-                            <img src="club_placeholder.png" alt="Αστέρας Εξαρχείων" class="team-badge">
-                            <div class="team-name">Αστέρας Εξαρχείων</div>
-                        </div> 
-                        <div class="vs-container">
-                            <div class="match-status status-won">4 - 3</div>
-                        </div>
-                        <div class="team">
-                            <img src="logo_mg-1.png" alt="Μεγάλο Λειβάδι FC" class="team-badge">
-                            <div class="team-name">Μεγάλο Λειβάδι FC</div>
-                        </div>
-                    </div>
-                    <i class="fas fa-chevron-right"></i>
-                </div>
-                <div class="accordion-content">
-                    <div class="stats-header">Player Statistics</div>
-                    <div class="starting-players">
-                        <table class="player-stats-table">
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Name</th>
-                                    <th>Position</th>
-                                    <th>Goal</th>
-                                    <th>Assist</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr><td>0</td><td class="player-name">Δημητράκης <span class="player-role">(C)</span></td><td>Defender</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>1</td><td class="player-name">Mάο <span class="player-role">(Τ)</span></td><td>Goalkeeper</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>2</td><td class="player-name">Πριγκιπς</td><td>Defender</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>5</td><td class="player-name">Vaggolinho</td><td>Defender</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>8</td><td class="player-name">Faninho JR</td><td>Midfielder</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>9</td><td class="player-name">Dixyle</td><td>Striker</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>10</td><td class="player-name">Φράγκου Jr</td><td>Striker</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>11</td><td class="player-name">Magoulinho</td><td>Striker</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>19</td><td class="player-name">Τsak Van Dijk</td><td>Defender</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>22</td><td class="player-name">Χαιρέτας</td><td>Defender</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>-</td><td class="player-name">Βυρωνας <span class="player-role">(Π)</span></td><td>CEO</td><td class="goal-cell">-</td><td class="assist-cell">-</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+            <div id="matches-container">
+                <div class="loading">Loading match data...</div>
             </div>
-            <div class="accordion">
-                <div class="accordion-header">
-                    <div class="match-card">
-                        <div class="match-date">September 24, 2025</div>
-                        <div class="team">
-                            <img src="club_placeholder.png" alt="Γυπαετοί" class="team-badge">
-                            <div class="team-name">Γυπαετοί</div>
-                        </div> 
-                        <div class="vs-container">
-                            <div class="match-status status-lost">1 - 4</div>
-                        </div>
-                        <div class="team">
-                            <img src="logo_mg-1.png" alt="Μεγάλο Λειβάδι FC" class="team-badge">
-                            <div class="team-name">Μεγάλο Λειβάδι FC</div>
-                        </div>
-                    </div>
-                    <i class="fas fa-chevron-right"></i>
-                </div>
-                <div class="accordion-content">
-                  <div class="stats-header">Player Statistics</div>
-                    <div class="starting-players">
-                        <table class="player-stats-table">
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Name</th>
-                                    <th>Played</th>
-                                    <th>Goal</th>
-                                    <th>Assist</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr><td>0</td><td class="player-name">Δημητράκης <span class="player-role">(C)</span></td><td>Defender</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>1</td><td class="player-name">Mάο <span class="player-role">(Τ)</span></td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>2</td><td class="player-name">Πριγκιπς</td><td>Defender</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>5</td><td class="player-name">Vaggolinho</td><td>Defender</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>8</td><td class="player-name">Faninho JR</td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">1</td></tr>
-                                <tr><td>9</td><td class="player-name">Dixyle</td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>10</td><td class="player-name">Φράγκου Jr</td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">1</td></tr>
-                                <tr><td>11</td><td class="player-name">Magoulinho</td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>19</td><td class="player-name">Τsak Van Dijk</td><td>Defender</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>21</td><td class="player-name">Παλαιός</td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>22</td><td class="player-name">Χαιρέτας</td><td>Defender</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>23</td><td class="player-name">Μαγουλάς</td><td>1</td><td class="goal-cell">1</td><td class="assist-cell">0</td></tr>
-                                <tr><td>-</td><td class="player-name">Βυρωνας <span class="player-role">(Π)</span></td><td>1</td><td class="goal-cell">-</td><td class="assist-cell">-</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            <div class="accordion">
-                <div class="accordion-header">
-                    <div class="match-card">
-                        <div class="match-date">September 17, 2025</div>
-                        <div class="team">
-                            <img src="club_placeholder.png" alt="Unknown" class="team-badge">
-                            <div class="team-name">???</div>
-                        </div> 
-                        <div class="vs-container">
-                            <div class="match-status status-lost">0 - 5</div>
-                        </div>
-                        <div class="team">
-                            <img src="logo_mg-1.png" alt="Μεγάλο Λειβάδι FC" class="team-badge">
-                            <div class="team-name">Μεγάλο Λειβάδι FC</div>
-                        </div>
-                    </div>
-                    <i class="fas fa-chevron-right"></i>
-                </div>
-                <div class="accordion-content">
-                    <div class="stats-header">Player Statistics</div>
-                    <div class="starting-players">
-                        <table class="player-stats-table">
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Name</th>
-                                    <th>Played</th>
-                                    <th>Goal</th>
-                                    <th>Assist</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr><td>0</td><td class="player-name">Δημητράκης <span class="player-role">(C)</span></td><td>Defender</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>1</td><td class="player-name">Mάο <span class="player-role">(Τ)</span></td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>2</td><td class="player-name">Πριγκιπς</td><td>defender</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>3</td><td class="player-name">Φράγκου</td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>8</td><td class="player-name">Faninho JR</td><td>1</td><td class="goal-cell">1</td><td class="assist-cell">2</td></tr>
-                                <tr><td>9</td><td class="player-name">Dixyle</td><td>1</td><td class="goal-cell">3</td><td class="assist-cell">0</td></tr>
-                                <tr><td>10</td><td class="player-name">Φράγκου Jr</td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>13</td><td class="player-name">Κουζούπης</td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>19</td><td class="player-name">Τsak Van Dijk</td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>21</td><td class="player-name">Παλαιός</td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>22</td><td class="player-name">Χαιρέτας</td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">1</td></tr>
-                                <tr><td>23</td><td class="player-name">Μαγουλάς</td><td>1</td><td class="goal-cell">0</td><td class="assist-cell">0</td></tr>
-                                <tr><td>-</td><td class="player-name">Βυρωνας <span class="player-role">(Π)</span></td><td>1</td><td class="goal-cell">-</td><td class="assist-cell">-</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-
         </div>
     </section>
 
@@ -641,6 +509,184 @@
     </footer>
 
     <script>
+        // Load match data from JSON
+        async function loadMatchData() {
+            try {
+                const response = await fetch('matches.json');
+                if (!response.ok) {
+                    throw new Error('Failed to load match data');
+                }
+                const data = await response.json();
+                displayMatches(data.matches);
+            } catch (error) {
+                console.error('Error loading match data:', error);
+                document.getElementById('matches-container').innerHTML = 
+                    '<div class="loading">Error loading match data. Please try again later.</div>';
+            }
+        }
+
+        // Display matches from JSON data
+        function displayMatches(matches) {
+            const container = document.getElementById('matches-container');
+            container.innerHTML = '';
+            
+            // Sort matches by date (newest first)
+            matches.sort((a, b) => new Date(b.date) - new Date(a.date));
+            
+            matches.forEach(match => {
+                const accordion = document.createElement('div');
+                accordion.className = 'accordion';
+                
+                // Format date
+                const matchDate = new Date(match.date);
+                const formattedDate = matchDate.toLocaleDateString('en-US', { 
+                    year: 'numeric', 
+                    month: 'long', 
+                    day: 'numeric' 
+                });
+                
+                // Determine status and score
+                let statusClass, scoreText;
+                if (match.result) {
+                    const [goalsFor, goalsAgainst] = match.result.split('-').map(Number);
+                    if (match.outcome === 'W') {
+                        statusClass = 'status-won';
+                        scoreText = `${goalsFor} - ${goalsAgainst}`;
+                    } else if (match.outcome === 'L') {
+                        statusClass = 'status-lost';
+                        scoreText = `${goalsFor} - ${goalsAgainst}`;
+                    } else {
+                        statusClass = 'status-draw';
+                        scoreText = `${goalsFor} - ${goalsAgainst}`;
+                    }
+                } else {
+                    // If no result is available, show the outcome
+                    if (match.outcome === 'W') {
+                        statusClass = 'status-won';
+                        scoreText = 'W';
+                    } else if (match.outcome === 'L') {
+                        statusClass = 'status-lost';
+                        scoreText = 'L';
+                    } else {
+                        statusClass = 'status-draw';
+                        scoreText = 'D';
+                    }
+                }
+                
+                // Create accordion header
+                const header = document.createElement('div');
+                header.className = 'accordion-header';
+                header.innerHTML = `
+                    <div class="match-card">
+                        <div class="match-date">${formattedDate}</div>
+                        <div class="team">
+                            <img src="club_placeholder.png" alt="${match.opponent}" class="team-badge">
+                            <div class="team-name">${match.opponent}</div>
+                        </div> 
+                        <div class="vs-container">
+                            <div class="match-status ${statusClass}">${scoreText}</div>
+                        </div>
+                        <div class="team">
+                            <img src="logo_mg-1.png" alt="Μεγάλο Λειβάδι FC" class="team-badge">
+                            <div class="team-name">Μεγάλο Λειβάδι FC</div>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                `;
+                
+                // Create accordion content
+                const content = document.createElement('div');
+                content.className = 'accordion-content';
+                
+                // Player of the match info
+                if (match.player_of_match) {
+                    const playerOfMatch = document.createElement('div');
+                    playerOfMatch.className = 'match-info';
+                    playerOfMatch.innerHTML = `<strong>Player of the Match:</strong> ${match.player_of_match}`;
+                    content.appendChild(playerOfMatch);
+                }
+                
+                // Create player stats table
+                const statsHeader = document.createElement('div');
+                statsHeader.className = 'stats-header';
+                statsHeader.textContent = 'Player Statistics';
+                content.appendChild(statsHeader);
+                
+                // Filter players who played
+                const playersWhoPlayed = match.players.filter(player => player.played);
+                
+                // Table for players who played
+                if (playersWhoPlayed.length > 0) {
+                    const startingPlayers = document.createElement('div');
+                    startingPlayers.className = 'starting-players';
+                    
+                    const table = document.createElement('table');
+                    table.className = 'player-stats-table';
+                    table.innerHTML = `
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Goal</th>
+                                <th>Assist</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${playersWhoPlayed.map(player => {
+                                // Determine role indicators
+                                let role = '';
+                                if (player.name.includes('(C)')) role = '(C)';
+                                else if (player.name.includes('(Τ)')) role = '(Τ)';
+                                else if (player.name.includes('(Π)')) role = '(Π)';
+                                
+                                // Clean name from role indicators
+                                const cleanName = player.name.replace(' (C)', '').replace(' (Τ)', '').replace(' (Π)', '');
+                                
+                                // Check if this player is Player of the Match
+                                const isPOM = match.player_of_match && 
+                                    (match.player_of_match.includes(cleanName) || 
+                                     cleanName.includes(match.player_of_match));
+                                
+                                return `
+                                    <tr>
+                                        <td>${player.number}</td>
+                                        <td class="player-name">
+                                            ${cleanName} 
+                                            ${role ? `<span class="player-role">${role}</span>` : ''}
+                                            ${isPOM ? '<i class="fas fa-star pom-star"></i>' : ''}
+                                        </td>
+                                        <td class="goal-cell">${player.goals}</td>
+                                        <td class="assist-cell">${player.assists}</td>
+                                    </tr>
+                                `;
+                            }).join('')}
+                        </tbody>
+                    `;
+                    
+                    startingPlayers.appendChild(table);
+                    content.appendChild(startingPlayers);
+                }
+                
+                // Assemble accordion
+                accordion.appendChild(header);
+                accordion.appendChild(content);
+                container.appendChild(accordion);
+            });
+            
+            // Reattach accordion toggle functionality
+            attachAccordionToggle();
+        }
+
+        // Attach accordion toggle functionality
+        function attachAccordionToggle() {
+            document.querySelectorAll('.accordion-header').forEach(header => {
+                header.addEventListener('click', () => {
+                    const accordion = header.parentElement;
+                    accordion.classList.toggle('open');
+                });
+            });
+        }
+
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -680,14 +726,9 @@
                 }
             });
         });
-        
-        // Accordion toggle
-        document.querySelectorAll('.accordion-header').forEach(header => {
-            header.addEventListener('click', () => {
-                const accordion = header.parentElement;
-                accordion.classList.toggle('open');
-            });
-        });
+
+        // Load match data when page loads
+        document.addEventListener('DOMContentLoaded', loadMatchData);
     </script>
 </body>
 </html>
