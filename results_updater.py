@@ -167,15 +167,20 @@ for i in range(nrows):
                     k += 1
                     continue
                 name = str(name_val).strip() if not pd.isna(name_val) else ""
-                played = False
+                position = ""
                 if "played" in col_map:
                     pc = df.iat[k, col_map["played"]]
                     if not pd.isna(pc):
-                        pcs = str(pc).strip().lower()
-                        if pcs in ("1", "1.0", "yes", "y", "true", "t"):
-                            played = True
-                        else:
-                            played = float(pc) != 0
+                        position = str(pc).strip()
+                        # Convert numeric positions to empty string (they didn't play)
+                        if position.replace('.', '').isdigit():
+                            if float(position) == 0:
+                                position = ""
+                            else:
+                                position = "Played" 
+                if not position:
+                    k += 1
+                    continue# fallback for non-zero numbers
                 goals = 0
                 if "goals" in col_map:
                     gc = df.iat[k, col_map["goals"]]
@@ -195,7 +200,7 @@ for i in range(nrows):
                 players.append({
                     "number": number,
                     "name": name,
-                    "played": bool(played),
+                    "position": position,
                     "goals": int(goals),
                     "assists": int(assists)
                 })

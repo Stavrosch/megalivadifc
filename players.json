@@ -1,6 +1,6 @@
 {
   "players": {
-    "Δημητράκης (C)": {
+    "Δημητράκης ": {
       "apps": 3,
       "goals": 0,
       "assists": 0,
@@ -10,7 +10,7 @@
       "height": "180cm",
       "position": "Center Mid"
     },
-    "Mάο (Τ)": {
+    "Mάο": {
       "apps": 3,
       "goals": 0,
       "assists": 0,
@@ -51,7 +51,7 @@
       "position": "Center Back"
     },
     "Vaggolinho": {
-      "apps": 2,
+      "apps": 1,
       "goals": 0,
       "assists": 0,
       "pom": 0,
@@ -90,7 +90,7 @@
       "height": "175cm",
       "position": "Center Attacking Mid"
     },
-    "Dixyle": {
+    "Ξυπνητός": {
       "apps": 3,
       "goals": 3,
       "assists": 0,
@@ -171,20 +171,30 @@
       "position": "Full-Back"
     },
     "Μαγουλάς": {
-      "apps": 2,
+      "apps": 1,
       "goals": 1,
       "assists": 0,
-      "pom": 0,
+      "pom": 1,
       "jersey_number": 23,
       "age": 31,
       "height": "182cm",
       "position": "Winger"
     }
   },
+  "top_performers": {
+    "top_scorer": {
+      "name": "Ξυπνητός",
+      "goals": 3
+    },
+    "top_assister": {
+      "name": "Faninho JR",
+      "assists": 2
+    }
+  },
   "metadata": {
-    "last_updated": "2025-10-06T14:49:34.210266",
+    "last_updated": "2025-10-08T18:50:55.304190",
     "total_players": 18,
     "source_file": "ΜΕΓΑ ΛΙΒΑΔΙ FC.xlsx",
-    "previous_update": "2025-10-06T14:48:59.363106"
+    "previous_update": "2025-10-08T18:49:37.710146"
   }
 }

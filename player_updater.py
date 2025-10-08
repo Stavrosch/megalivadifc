@@ -110,6 +110,21 @@ def update_player_json(excel_file_path, json_file_path='players.json'):
             existing_data['players'][player_name] = player_data
     else:
         existing_data['players'] = new_players_data
+        
+    if existing_data['players']:
+        top_scorer = max(existing_data['players'].items(), key=lambda x: x[1].get('goals', 0))
+        top_assister = max(existing_data['players'].items(), key=lambda x: x[1].get('assists', 0))
+        
+        existing_data['top_performers'] = {
+            'top_scorer': {
+                'name': top_scorer[0],
+                'goals': top_scorer[1].get('goals', 0)
+            },
+            'top_assister': {
+                'name': top_assister[0],
+                'assists': top_assister[1].get('assists', 0)
+            }
+        }    
     
     # Update metadata
     existing_data['metadata'] = {
@@ -152,3 +167,17 @@ if __name__ == "__main__":
             print(f"  Jersey: #{stats.get('jersey_number', stats.get('number', 'N/A'))}")
             print(f"  Stats: APPS={stats.get('apps', 0)}, GOALS={stats.get('goals', 0)}, ASSISTS={stats.get('assists', 0)}, POM={stats.get('pom', 0)}")
             print("-" * 40)
+            
+        print("\nTop Performers:")
+        print("=" * 40)
+
+        # Find top goalscorer
+        top_scorer = max(data['players'].items(), key=lambda x: x[1].get('goals', 0))
+        print(f"Top Goalscorer: {top_scorer[0]}")
+        print(f"  Goals: {top_scorer[1].get('goals', 0)}")
+
+        # Find top assister  
+        top_assister = max(data['players'].items(), key=lambda x: x[1].get('assists', 0))
+        print(f"Top Assister: {top_assister[0]}")
+        print(f"  Assists: {top_assister[1].get('assists', 0)}")
+            
