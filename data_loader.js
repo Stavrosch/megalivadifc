@@ -158,7 +158,7 @@ function updateTeamStatistics(matchesData) {
     if (matchesWon) matchesWon.textContent = summary.wins;
     if (goalsScored) goalsScored.textContent = summary.goals_for;
     if (cleanSheets) cleanSheets.textContent = '0'; // You can calculate this from match data if available
-    if (leaguePosition) leaguePosition.textContent = '5th'; // This could be dynamic too
+    if (leaguePosition) leaguePosition.textContent = '6th'; // This could be dynamic too
 }
 
 // Function to update president wins/losses
