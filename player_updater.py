@@ -16,7 +16,7 @@ def extract_player_data_from_excel(file_path):
         players = {}
         
         # Extract stats from Sheet2 (summary table)
-        for index, row in df_sheet2.iterrows():
+        for index, row in df_static.iterrows():
             # Check if this row contains the summary table headers
             if (len(row) > 11 and 
                 row.iloc[7] == 'Names' and 
