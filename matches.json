@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2025-10-09T17:05:13",
+    "last_updated": "2025-10-11T04:36:35",
     "total_matches": 4,
     "source_file": "ΜΕΓΑ ΛΙΒΑΔΙ FC.xlsx",
     "season": "2024-2025"
@@ -11,15 +11,16 @@
     "draws": 0,
     "losses": 3,
     "points": 3,
-    "goals_for": 7,
-    "goals_against": 19,
-    "goal_difference": -12,
+    "goals_for": 8,
+    "goals_against": 18,
+    "goal_difference": -10,
     "win_percentage": 25.0
   },
   "matches": [
     {
       "date": "2025-09-17",
       "opponent": "Άπιαστοι",
+      "location": "Away",
       "result": "0-5",
       "outcome": "L",
       "points": 0,
@@ -86,6 +87,7 @@
     {
       "date": "2025-09-24",
       "opponent": "Γυπαετοί",
+      "location": "Away",
       "result": "1-4",
       "outcome": "L",
       "points": 0,
@@ -173,7 +175,8 @@
     {
       "date": "2025-10-01",
       "opponent": "Αστέρας Εξαρχείων",
-      "result": "3-4",
+      "location": "Away",
+      "result": "4-3",
       "outcome": "W",
       "points": 3,
       "player_of_match": "Δημήτρης Ξυπνητός",
@@ -260,6 +263,7 @@
     {
       "date": "2025-10-08",
       "opponent": "Παράγκα",
+      "location": "Home",
       "result": "3-6",
       "outcome": "L",
       "points": 0,
@@ -296,7 +300,7 @@
         {
           "number": 8,
           "name": "Faninho JR",
-          "position": "Midfielder",
+          "position": "Bench",
           "goals": 0,
           "assists": 0
         },

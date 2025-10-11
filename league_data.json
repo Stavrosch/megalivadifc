@@ -1,0 +1,137 @@
+{
+  "last_updated": "2025-10-11 03:01:34",
+  "teams": [
+    {
+      "position": 1,
+      "team": "Mineiro FC",
+      "played": 4,
+      "won": 4,
+      "drawn": 0,
+      "lost": 0,
+      "goalsFor": 40,
+      "goalsAgainst": 11,
+      "goalDifference": 29,
+      "points": 12
+    },
+    {
+      "position": 2,
+      "team": "Απιάστοι FC",
+      "played": 5,
+      "won": 4,
+      "drawn": 0,
+      "lost": 1,
+      "goalsFor": 35,
+      "goalsAgainst": 19,
+      "goalDifference": 16,
+      "points": 12
+    },
+    {
+      "position": 3,
+      "team": "Γυπαετοί FC",
+      "played": 3,
+      "won": 3,
+      "drawn": 0,
+      "lost": 0,
+      "goalsFor": 19,
+      "goalsAgainst": 7,
+      "goalDifference": 12,
+      "points": 9
+    },
+    {
+      "position": 4,
+      "team": "Παράγκα FC",
+      "played": 2,
+      "won": 2,
+      "drawn": 0,
+      "lost": 0,
+      "goalsFor": 17,
+      "goalsAgainst": 4,
+      "goalDifference": 13,
+      "points": 6
+    },
+    {
+      "position": 5,
+      "team": "Xασόμερ City",
+      "played": 3,
+      "won": 1,
+      "drawn": 1,
+      "lost": 1,
+      "goalsFor": 13,
+      "goalsAgainst": 9,
+      "goalDifference": 4,
+      "points": 4
+    },
+    {
+      "position": 6,
+      "team": "Μεγάλο Λειβάδι FC",
+      "played": 4,
+      "won": 1,
+      "drawn": 0,
+      "lost": 3,
+      "goalsFor": 8,
+      "goalsAgainst": 18,
+      "goalDifference": -10,
+      "points": 3
+    },
+    {
+      "position": 7,
+      "team": "Wind FC",
+      "played": 2,
+      "won": 0,
+      "drawn": 1,
+      "lost": 1,
+      "goalsFor": 4,
+      "goalsAgainst": 11,
+      "goalDifference": -7,
+      "points": 1
+    },
+    {
+      "position": 8,
+      "team": "Neverton FC",
+      "played": 1,
+      "won": 0,
+      "drawn": 0,
+      "lost": 1,
+      "goalsFor": 5,
+      "goalsAgainst": 6,
+      "goalDifference": -1,
+      "points": 0
+    },
+    {
+      "position": 9,
+      "team": "Αστέρας Εξαρχείων",
+      "played": 1,
+      "won": 0,
+      "drawn": 0,
+      "lost": 1,
+      "goalsFor": 3,
+      "goalsAgainst": 4,
+      "goalDifference": -1,
+      "points": 0
+    },
+    {
+      "position": 10,
+      "team": "Αμπαλοί FC",
+      "played": 1,
+      "won": 0,
+      "drawn": 0,
+      "lost": 1,
+      "goalsFor": 0,
+      "goalsAgainst": 10,
+      "goalDifference": -10,
+      "points": 0
+    },
+    {
+      "position": 11,
+      "team": "Πτώματα FC",
+      "played": 3,
+      "won": 0,
+      "drawn": 0,
+      "lost": 3,
+      "goalsFor": 9,
+      "goalsAgainst": 27,
+      "goalDifference": -18,
+      "points": 0
+    }
+  ]
+}
