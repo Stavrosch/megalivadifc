@@ -1,185 +1,221 @@
 {
   "players": {
     "Δημητράκης ": {
-      "apps": 4,
-      "goals": 0,
-      "assists": 0,
-      "pom": 0,
       "jersey_number": 0,
       "age": 29,
       "height": "181cm",
-      "position": "Center Mid"
-    },
-    "Mάο": {
+      "position": "Center Mid",
       "apps": 4,
       "goals": 0,
       "assists": 0,
-      "pom": 1,
+      "pom": 0
+    },
+    "Mάο": {
       "jersey_number": 1,
       "age": 26,
       "height": "183cm",
-      "position": "Goalkeeper"
-    },
-    "Πριγκιπς": {
+      "position": "Goalkeeper",
       "apps": 4,
       "goals": 0,
       "assists": 0,
-      "pom": 0,
+      "pom": 0
+    },
+    "Πριγκιπς": {
       "jersey_number": 2,
       "age": 20,
       "height": "174cm",
-      "position": "Full-Back"
-    },
-    "Φράγκου": {
-      "apps": 1,
+      "position": "Full-Back",
+      "apps": 4,
       "goals": 0,
       "assists": 0,
-      "pom": 0,
+      "pom": 0
+    },
+    "Φράγκου": {
       "jersey_number": 3,
       "age": 33,
       "height": "187cm",
-      "position": "Center Back"
-    },
-    "Αλεξίου": {
-      "apps": 0,
+      "position": "Center Back",
+      "apps": 1,
       "goals": 0,
       "assists": 0,
-      "pom": 0,
+      "pom": 0
+    },
+    "Αλεξίου": {
       "jersey_number": 4,
       "age": 29,
       "height": "180cm",
-      "position": "Center Back"
-    },
-    "Vaggolinho": {
-      "apps": 2,
+      "position": "Center Back",
+      "apps": 0,
       "goals": 0,
       "assists": 0,
-      "pom": 0,
+      "pom": 0
+    },
+    "Vaggolinho": {
       "jersey_number": 5,
       "age": 21,
       "height": "175cm",
-      "position": "Full-Back"
-    },
-    "El Professor": {
-      "apps": 0,
-      "goals": 0,
-      "assists": 0,
-      "pom": 0,
-      "jersey_number": 6,
-      "age": 31,
-      "height": "180cm",
-      "position": "Center Back"
-    },
-    "Χ. Αλεξίου": {
-      "apps": 0,
-      "goals": 0,
-      "assists": 0,
-      "pom": 0,
-      "jersey_number": 7,
-      "age": 33,
-      "height": "180cm",
-      "position": "Winger"
-    },
-    "Faninho JR": {
-      "apps": 4,
-      "goals": 1,
-      "assists": 2,
-      "pom": 0,
-      "jersey_number": 8,
-      "age": 27,
-      "height": "178cm",
-      "position": "Center Attacking Mid"
-    },
-    "Ξυπνητός": {
-      "apps": 4,
-      "goals": 4,
-      "assists": 0,
-      "pom": 1,
-      "jersey_number": 9,
-      "age": 31,
-      "height": "175cm",
-      "position": "Striker"
-    },
-    "Φράγκου Jr": {
-      "apps": 4,
-      "goals": 2,
-      "assists": 1,
-      "pom": 1,
-      "jersey_number": 10,
-      "age": 23,
-      "height": "188cm",
-      "position": "Striker"
-    },
-    "Magoulinho": {
-      "apps": 1,
-      "goals": 0,
-      "assists": 0,
-      "pom": 0,
-      "jersey_number": 11,
-      "age": 26,
-      "height": "178cm",
-      "position": "Striker"
-    },
-    "Κουζούπης": {
+      "position": "Full-Back",
       "apps": 2,
       "goals": 0,
       "assists": 0,
-      "pom": 0,
-      "jersey_number": 13,
-      "age": 25,
-      "height": "180cm",
-      "position": "Winger"
+      "pom": 0
     },
-    "Πάλης": {
+    "El Professor": {
+      "jersey_number": 6,
+      "age": 31,
+      "height": "180cm",
+      "position": "Center Back",
       "apps": 0,
       "goals": 0,
       "assists": 0,
-      "pom": 0,
+      "pom": 0
+    },
+    "Χ. Αλεξίου": {
+      "jersey_number": 7,
+      "age": 33,
+      "height": "180cm",
+      "position": "Winger",
+      "apps": 0,
+      "goals": 0,
+      "assists": 0,
+      "pom": 0
+    },
+    "Faninho JR": {
+      "jersey_number": 8,
+      "age": 27,
+      "height": "178cm",
+      "position": "Center Attacking Mid",
+      "apps": 2,
+      "goals": 1,
+      "assists": 2,
+      "pom": 0
+    },
+    "Ξυπνητός": {
+      "jersey_number": 9,
+      "age": 31,
+      "height": "175cm",
+      "position": "Striker",
+      "apps": 4,
+      "goals": 4,
+      "assists": 0,
+      "pom": 0
+    },
+    "Φράγκου Jr": {
+      "jersey_number": 10,
+      "age": 23,
+      "height": "188cm",
+      "position": "Striker",
+      "apps": 2,
+      "goals": 2,
+      "assists": 1,
+      "pom": 1
+    },
+    "Magoulinho": {
+      "jersey_number": 11,
+      "age": 26,
+      "height": "178cm",
+      "position": "Striker",
+      "apps": 1,
+      "goals": 0,
+      "assists": 0,
+      "pom": 0
+    },
+    "Κουζούπης": {
+      "jersey_number": 13,
+      "age": 25,
+      "height": "180cm",
+      "position": "Winger",
+      "apps": 0,
+      "goals": 0,
+      "assists": 0,
+      "pom": 0
+    },
+    "Πάλης": {
       "jersey_number": 17,
       "age": 18,
       "height": "180cm",
-      "position": "Full-Back"
-    },
-    "Τsak Van Dijk": {
-      "apps": 4,
+      "position": "Full-Back",
+      "apps": 0,
       "goals": 0,
       "assists": 0,
-      "pom": 0,
+      "pom": 0
+    },
+    "Τsak Van Dijk": {
       "jersey_number": 19,
       "age": 28,
       "height": "183cm",
-      "position": "Center Back"
-    },
-    "Παλαιός": {
-      "apps": 3,
+      "position": "Center Back",
+      "apps": 2,
       "goals": 0,
       "assists": 0,
-      "pom": 0,
+      "pom": 0
+    },
+    "Παλαιός": {
       "jersey_number": 21,
       "age": 36,
       "height": "180cm",
-      "position": "Center Mid"
-    },
-    "Χαιρέτας": {
+      "position": "Center Mid",
       "apps": 3,
       "goals": 0,
-      "assists": 2,
-      "pom": 0,
+      "assists": 1,
+      "pom": 0
+    },
+    "Χαιρέτας": {
       "jersey_number": 22,
       "age": 26,
       "height": "189cm",
-      "position": "Full-Back"
+      "position": "Full-Back",
+      "apps": 3,
+      "goals": 0,
+      "assists": 2,
+      "pom": 0
     },
     "Μαγουλάς": {
-      "apps": 1,
-      "goals": 1,
-      "assists": 0,
-      "pom": 1,
       "jersey_number": 23,
       "age": 31,
       "height": "182cm",
-      "position": "Winger"
+      "position": "Winger",
+      "apps": 0,
+      "goals": 1,
+      "assists": 0,
+      "pom": 1
+    },
+    "Νικολάου": {
+      "jersey_number": 24,
+      "age": 32,
+      "height": "180cm",
+      "position": "-",
+      "apps": 0,
+      "goals": 0,
+      "assists": 0,
+      "pom": 0
+    },
+    "Kavvas": {
+      "jersey_number": 55,
+      "age": 17,
+      "height": "170cm",
+      "position": "-",
+      "apps": 0,
+      "goals": 0,
+      "assists": 0,
+      "pom": 0
+    },
+    "Βυρωνας (Π)": {
+      "jersey_number": 0,
+      "age": 35,
+      "height": "183cm",
+      "position": "CEO",
+      "apps": 0,
+      "goals": 0,
+      "assists": 0,
+      "pom": 0
     }
+  },
+  "metadata": {
+    "last_updated": "2025-10-11T15:30:20.309555",
+    "total_players": 21,
+    "source_file": "ΜΕΓΑ ΛΙΒΑΔΙ FC.xlsx",
+    "previous_update": "2025-10-11T15:19:36.255142"
   },
   "top_performers": {
     "top_scorer": {
@@ -190,11 +226,5 @@
       "name": "Faninho JR",
       "assists": 2
     }
-  },
-  "metadata": {
-    "last_updated": "2025-10-09T17:05:30.612245",
-    "total_players": 18,
-    "source_file": "ΜΕΓΑ ΛΙΒΑΔΙ FC.xlsx",
-    "previous_update": "2025-10-09T17:03:00.215811"
   }
 }
