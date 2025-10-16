@@ -153,12 +153,10 @@ function updateTeamStatistics(matchesData) {
     const matchesWon = document.querySelector('.stat-card:nth-child(1) h3');
     const goalsScored = document.querySelector('.stat-card:nth-child(2) h3');
     const cleanSheets = document.querySelector('.stat-card:nth-child(3) h3');
-    const leaguePosition = document.querySelector('.stat-card:nth-child(4) h3');
     
     if (matchesWon) matchesWon.textContent = summary.wins;
     if (goalsScored) goalsScored.textContent = summary.goals_for;
     if (cleanSheets) cleanSheets.textContent = '0'; // You can calculate this from match data if available
-    if (leaguePosition) leaguePosition.textContent = '6th'; // This could be dynamic too
 }
 
 // Function to update president wins/losses

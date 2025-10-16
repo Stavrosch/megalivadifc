@@ -78,19 +78,19 @@ class TableLoader {
         if (!ourTeam) return;
 
         // Update matches won
-        const matchesWonElement = document.querySelector('#stats .stat-card:nth-child(1) h3');
-        if (matchesWonElement) {
-            matchesWonElement.textContent = ourTeam.won;
-        }
+        const matchesWonElement = document.getElementById('matches-won');
+        if (matchesWonElement) matchesWonElement.textContent = ourTeam.won;
         
         // Update goals scored
-        const goalsScoredElement = document.querySelector('#stats .stat-card:nth-child(2) h3');
-        if (goalsScoredElement) {
-            goalsScoredElement.textContent = ourTeam.goalsFor;
-        }
+        const goalsScoredElement = document.getElementById('goals-scored');
+        if (goalsScoredElement) goalsScoredElement.textContent = ourTeam.goalsFor;
+        
+        // Update clean sheets (you might need to calculate this)
+        const cleanSheetsElement = document.getElementById('clean-sheets');
+        if (cleanSheetsElement) cleanSheetsElement.textContent = '0'; // Placeholder
         
         // Update league position
-        const leaguePositionElement = document.querySelector('#stats .stat-card:nth-child(4) h3');
+        const leaguePositionElement = document.getElementById('league-position');
         if (leaguePositionElement) {
             leaguePositionElement.textContent = this.getOrdinalSuffix(ourTeam.position);
         }
