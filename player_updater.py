@@ -44,7 +44,6 @@ def extract_player_data_from_excel(file_path):
             if len(row) < 3:
                 continue
                 
-            # Check for Date row (new match)
             if 'Date' in str(row.iloc[0]) and len(row) > 2:
                 current_match_date = row.iloc[2]
                 print(f"Found match date: {current_match_date}")
@@ -59,7 +58,6 @@ def extract_player_data_from_excel(file_path):
                         players[pom_name]['pom'] += 1
                         print(f"Awarded POM to: {pom_name}")
             
-            # Check for player stats row (has jersey number in second column and name in third)
             elif (pd.notna(row.iloc[1]) and 
                   str(row.iloc[1]).isdigit() and 
                   pd.notna(row.iloc[2]) and 
@@ -71,12 +69,10 @@ def extract_player_data_from_excel(file_path):
                 goals = row.iloc[4] if len(row) > 4 else 0
                 assists = row.iloc[5] if len(row) > 5 else 0
                 
-                # Debug info
                 debug_info = f"Player: {player_name}, Played: {played}, Goals: {goals}, Assists: {assists}"
                 
-                # Count appearance if player played (not 0, '0', or 'Bench')
                 if (pd.notna(played) and played != 0 and played != '0' and 
-                    played != 'Bench' and played != ''):
+                    played != ''):
                     players[player_name]['apps'] += 1
                     match_players.add(player_name)
                     debug_info += f" → APPEARANCE (#{players[player_name]['apps']})"
@@ -155,7 +151,6 @@ def update_player_json(excel_file_path, json_file_path='players.json'):
         except Exception as e:
             print(f"Error reading existing JSON file: {e}")
     
-    # Extract new data from Excel
     new_players_data = extract_player_data_from_excel(excel_file_path)
     
     if not new_players_data:

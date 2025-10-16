@@ -1,20 +1,20 @@
 {
   "metadata": {
-    "last_updated": "2025-10-11T04:36:35",
-    "total_matches": 4,
+    "last_updated": "2025-10-16T12:38:39",
+    "total_matches": 5,
     "source_file": "ΜΕΓΑ ΛΙΒΑΔΙ FC.xlsx",
     "season": "2024-2025"
   },
   "summary": {
-    "played": 4,
-    "wins": 1,
+    "played": 5,
+    "wins": 2,
     "draws": 0,
     "losses": 3,
-    "points": 3,
-    "goals_for": 8,
-    "goals_against": 18,
-    "goal_difference": -10,
-    "win_percentage": 25.0
+    "points": 6,
+    "goals_for": 13,
+    "goals_against": 22,
+    "goal_difference": -9,
+    "win_percentage": 40.0
   },
   "matches": [
     {
@@ -345,6 +345,94 @@
           "position": "Defender",
           "goals": 0,
           "assists": 1
+        }
+      ]
+    },
+    {
+      "date": "2025-10-15",
+      "opponent": "Χασομερ Σιτυ",
+      "location": "Home",
+      "result": "5-4",
+      "outcome": "W",
+      "points": 3,
+      "player_of_match": "Kavvas",
+      "players": [
+        {
+          "number": 0,
+          "name": "Δημητράκης",
+          "position": "Defender",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 2,
+          "name": "Πριγκιπς",
+          "position": "Defender",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 3,
+          "name": "Φράγκου",
+          "position": "Defender",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 8,
+          "name": "Faninho JR",
+          "position": "Midfielder",
+          "goals": 0,
+          "assists": 2
+        },
+        {
+          "number": 9,
+          "name": "Ξυπνητός",
+          "position": "Striker",
+          "goals": 1,
+          "assists": 0
+        },
+        {
+          "number": 10,
+          "name": "Φράγκου Jr",
+          "position": "Bench",
+          "goals": 1,
+          "assists": 0
+        },
+        {
+          "number": 11,
+          "name": "Magoulinho",
+          "position": "Bench",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 19,
+          "name": "Τsak Van Dijk",
+          "position": "Midfielder",
+          "goals": 1,
+          "assists": 0
+        },
+        {
+          "number": 21,
+          "name": "Παλαιός",
+          "position": "Midfielder",
+          "goals": 0,
+          "assists": 1
+        },
+        {
+          "number": 22,
+          "name": "Χαιρέτας",
+          "position": "Goalkeeper",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 55,
+          "name": "Kavvas",
+          "position": "Bench",
+          "goals": 2,
+          "assists": 0
         }
       ]
     }
