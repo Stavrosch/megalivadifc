@@ -110,11 +110,11 @@ for i in range(nrows):
         # find explicit score nearby
         result, score_row, score_col = find_score_near(i, max_up=8, max_down=3)
         
-        # Adjust score order based on home/away
-        if result and location == "Away":
-            # For away matches, swap the score to show opponent first
-            home_goals, away_goals = result.split('-')
-            result = f"{away_goals}-{home_goals}"
+        # # Adjust score order based on home/away
+        # if result and location == "Away":
+        #     # For away matches, swap the score to show opponent first
+        #     home_goals, away_goals = result.split('-')
+        #     result = f"{home_goals}-{away_goals}"
         
         # parse player block
         stats_idx = None
