@@ -5,9 +5,9 @@
       "age": 29,
       "height": "181cm",
       "position": "Center Mid",
-      "apps": 7,
-      "goals": 0,
-      "assists": 0,
+      "apps": 10,
+      "goals": 1,
+      "assists": 1,
       "pom": 0
     },
     "Mάο": {
@@ -15,7 +15,7 @@
       "age": 26,
       "height": "183cm",
       "position": "Goalkeeper",
-      "apps": 6,
+      "apps": 9,
       "goals": 0,
       "assists": 0,
       "pom": 0
@@ -25,7 +25,7 @@
       "age": 20,
       "height": "174cm",
       "position": "Full-Back",
-      "apps": 7,
+      "apps": 10,
       "goals": 2,
       "assists": 1,
       "pom": 1
@@ -35,7 +35,7 @@
       "age": 33,
       "height": "187cm",
       "position": "Center Back",
-      "apps": 4,
+      "apps": 7,
       "goals": 0,
       "assists": 0,
       "pom": 0
@@ -55,8 +55,8 @@
       "age": 21,
       "height": "175cm",
       "position": "Full-Back",
-      "apps": 3,
-      "goals": 0,
+      "apps": 5,
+      "goals": 1,
       "assists": 0,
       "pom": 0
     },
@@ -65,7 +65,7 @@
       "age": 31,
       "height": "180cm",
       "position": "Center Back",
-      "apps": 0,
+      "apps": 2,
       "goals": 0,
       "assists": 0,
       "pom": 0
@@ -85,18 +85,18 @@
       "age": 27,
       "height": "178cm",
       "position": "Center Attacking Mid",
-      "apps": 7,
-      "goals": 4,
-      "assists": 6,
-      "pom": 1
+      "apps": 10,
+      "goals": 9,
+      "assists": 10,
+      "pom": 2
     },
     "Ξυπνητός": {
       "jersey_number": 9,
       "age": 31,
       "height": "175cm",
       "position": "Striker",
-      "apps": 7,
-      "goals": 5,
+      "apps": 9,
+      "goals": 7,
       "assists": 0,
       "pom": 0
     },
@@ -105,8 +105,8 @@
       "age": 23,
       "height": "188cm",
       "position": "Striker",
-      "apps": 6,
-      "goals": 3,
+      "apps": 9,
+      "goals": 4,
       "assists": 1,
       "pom": 1
     },
@@ -115,8 +115,8 @@
       "age": 26,
       "height": "178cm",
       "position": "Striker",
-      "apps": 3,
-      "goals": 0,
+      "apps": 5,
+      "goals": 2,
       "assists": 1,
       "pom": 0
     },
@@ -125,7 +125,7 @@
       "age": 25,
       "height": "180cm",
       "position": "Winger",
-      "apps": 3,
+      "apps": 4,
       "goals": 0,
       "assists": 0,
       "pom": 0
@@ -145,7 +145,7 @@
       "age": 28,
       "height": "183cm",
       "position": "Center Back",
-      "apps": 6,
+      "apps": 8,
       "goals": 1,
       "assists": 0,
       "pom": 0
@@ -155,7 +155,7 @@
       "age": 36,
       "height": "180cm",
       "position": "Center Mid",
-      "apps": 6,
+      "apps": 9,
       "goals": 0,
       "assists": 2,
       "pom": 0
@@ -165,7 +165,7 @@
       "age": 26,
       "height": "189cm",
       "position": "Full-Back",
-      "apps": 5,
+      "apps": 6,
       "goals": 0,
       "assists": 2,
       "pom": 0
@@ -195,7 +195,7 @@
       "age": 17,
       "height": "170cm",
       "position": "Full-Back",
-      "apps": 3,
+      "apps": 5,
       "goals": 2,
       "assists": 0,
       "pom": 1
@@ -213,18 +213,18 @@
   },
   "top_performers": {
     "top_scorer": {
-      "name": "Ξυπνητός",
-      "goals": 5
+      "name": "Faninho JR",
+      "goals": 9
     },
     "top_assister": {
       "name": "Faninho JR",
-      "assists": 6
+      "assists": 10
     }
   },
   "metadata": {
-    "last_updated": "2025-10-31T18:06:17.316393",
+    "last_updated": "2025-12-03T14:54:00.589650",
     "total_players": 21,
     "source_file": "ΜΕΓΑ ΛΙΒΑΔΙ FC.xlsx",
-    "previous_update": "2025-10-16T12:49:38.090265"
+    "previous_update": "2025-10-31T18:06:17.316393"
   }
 }

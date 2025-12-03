@@ -1,20 +1,20 @@
 {
   "metadata": {
-    "last_updated": "2025-10-31T18:06:07",
-    "total_matches": 7,
+    "last_updated": "2025-12-03T14:53:43",
+    "total_matches": 10,
     "source_file": "ΜΕΓΑ ΛΙΒΑΔΙ FC.xlsx",
     "season": "2024-2025"
   },
   "summary": {
-    "played": 7,
-    "wins": 3,
+    "played": 10,
+    "wins": 5,
     "draws": 0,
-    "losses": 4,
-    "points": 9,
-    "goals_for": 26,
-    "goals_against": 18,
+    "losses": 5,
+    "points": 15,
+    "goals_for": 40,
+    "goals_against": 32,
     "goal_difference": 8,
-    "win_percentage": 42.9
+    "win_percentage": 50.0
   },
   "matches": [
     {
@@ -437,7 +437,7 @@
       ]
     },
     {
-      "date": "2025-10-15",
+      "date": "2025-10-22",
       "opponent": "Wind",
       "location": "Away",
       "result": "3-2",
@@ -448,7 +448,7 @@
         {
           "number": 0,
           "name": "Δημητράκης",
-          "position": "Defender",
+          "position": "Midfielder",
           "goals": 0,
           "assists": 0
         },
@@ -511,7 +511,7 @@
         {
           "number": 22,
           "name": "Χαιρέτας",
-          "position": "Bench",
+          "position": "Defender",
           "goals": 0,
           "assists": 0
         },
@@ -525,7 +525,7 @@
       ]
     },
     {
-      "date": "2025-10-15",
+      "date": "2025-10-29",
       "opponent": "Χρυσούπολη",
       "location": "Home",
       "result": "3-1",
@@ -607,6 +607,284 @@
           "number": 55,
           "name": "Kavvas",
           "position": "Bench",
+          "goals": 0,
+          "assists": 0
+        }
+      ]
+    },
+    {
+      "date": "2025-11-05",
+      "opponent": "Πείραμα",
+      "location": "Away",
+      "result": "1-2",
+      "outcome": "W",
+      "points": 3,
+      "player_of_match": "Δημητράκης",
+      "players": [
+        {
+          "number": 0,
+          "name": "Δημητράκης",
+          "position": "Defender",
+          "goals": 0,
+          "assists": 1
+        },
+        {
+          "number": 1,
+          "name": "Mάο",
+          "position": "Goalkeeper",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 2,
+          "name": "Πριγκιπς",
+          "position": "Defender",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 3,
+          "name": "Φράγκου",
+          "position": "Defender",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 5,
+          "name": "Vaggolinho",
+          "position": "Bench",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 8,
+          "name": "Faninho JR",
+          "position": "Midfielder",
+          "goals": 1,
+          "assists": 0
+        },
+        {
+          "number": 9,
+          "name": "Ξυπνητός",
+          "position": "Striker",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 10,
+          "name": "Φράγκου Jr",
+          "position": "Bench",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 11,
+          "name": "Magoulinho",
+          "position": "Midfielder",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 13,
+          "name": "Κουζούπης",
+          "position": "Bench",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 19,
+          "name": "Τsak Van Dijk",
+          "position": "Bench",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 21,
+          "name": "Παλαιός",
+          "position": "Midfielder",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 22,
+          "name": "Χαιρέτας",
+          "position": "Bench",
+          "goals": 0,
+          "assists": 0
+        }
+      ]
+    },
+    {
+      "date": "2025-11-12",
+      "opponent": "Mineiro",
+      "location": "Away",
+      "result": "10-2",
+      "outcome": "L",
+      "points": 0,
+      "player_of_match": "Faninho JR",
+      "players": [
+        {
+          "number": 0,
+          "name": "Δημητράκης",
+          "position": "Defender",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 1,
+          "name": "Mάο",
+          "position": "Goalkeeper",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 2,
+          "name": "Πριγκιπς",
+          "position": "Defender",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 3,
+          "name": "Φράγκου",
+          "position": "Defender",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 6,
+          "name": "El Professor",
+          "position": "Midfieder",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 8,
+          "name": "Faninho JR",
+          "position": "Midfielder",
+          "goals": 1,
+          "assists": 1
+        },
+        {
+          "number": 10,
+          "name": "Φράγκου Jr",
+          "position": "Striker",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 21,
+          "name": "Παλαιός",
+          "position": "Midfielder",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 55,
+          "name": "Kavvas",
+          "position": "Defender",
+          "goals": 0,
+          "assists": 0
+        }
+      ]
+    },
+    {
+      "date": "2025-11-19",
+      "opponent": "Πτώματα",
+      "location": "Away",
+      "result": "3-10",
+      "outcome": "W",
+      "points": 3,
+      "player_of_match": "Φραγκού Jr",
+      "players": [
+        {
+          "number": 0,
+          "name": "Δημητράκης",
+          "position": "Midfielder",
+          "goals": 1,
+          "assists": 0
+        },
+        {
+          "number": 1,
+          "name": "Mάο",
+          "position": "Goalkeeper",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 2,
+          "name": "Πριγκιπς",
+          "position": "Defender",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 3,
+          "name": "Φράγκου",
+          "position": "Defender",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 5,
+          "name": "Vaggolinho",
+          "position": "Defender",
+          "goals": 1,
+          "assists": 0
+        },
+        {
+          "number": 6,
+          "name": "El Professor",
+          "position": "Bench",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 8,
+          "name": "Faninho JR",
+          "position": "Midfielder",
+          "goals": 3,
+          "assists": 3
+        },
+        {
+          "number": 9,
+          "name": "Ξυπνητός",
+          "position": "Striker",
+          "goals": 2,
+          "assists": 0
+        },
+        {
+          "number": 10,
+          "name": "Φράγκου Jr",
+          "position": "Bench",
+          "goals": 1,
+          "assists": 0
+        },
+        {
+          "number": 11,
+          "name": "Magoulinho",
+          "position": "Bench",
+          "goals": 2,
+          "assists": 0
+        },
+        {
+          "number": 19,
+          "name": "Τsak Van Dijk",
+          "position": "Bench",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 21,
+          "name": "Παλαιός",
+          "position": "Midfielder",
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "number": 55,
+          "name": "Kavvas",
+          "position": "Defender",
           "goals": 0,
           "assists": 0
         }
